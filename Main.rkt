@@ -115,7 +115,6 @@
     (define keyEventBuffer (new key-event%))
     (define mouseEventBuffer
       (new mouse-event% [event-type 'enter]))
-    (define dummyFrame (new frame% [label ""]))
     (define dc (send this get-dc))
     (define/override (on-char e) (set! keyEventBuffer e))
     (define/override (on-event e) (set! mouseEventBuffer e))
